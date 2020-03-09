@@ -25,12 +25,15 @@ body {
 .white {
     --width: 80px;
     background-color: #2b2b2b;
-    box-shadow: 4px 4px 6px #181818,
+    /* box-shadow: 4px 4px 6px #181818,
                 -4px -4px 6px #383838;
-    ;
+    ; */
     border-radius: 10px;
     margin-right: 8px;
     margin-left: 8px;
+background: #2e2e2e;
+box-shadow:  5px 5px 10px #232323, 
+             -5px -5px 10px #393939;
 }
 
 .black {
@@ -59,9 +62,8 @@ body {
 }
 
 .white.active {
-    box-shadow: inset 4px 4px 6px #181818,
-                inset -4px -4px 6px #383838;
-    ;
+    box-shadow: inset 5px 5px 10px #232323, 
+                inset -5px -5px 10px #393939;
 }
 
 .black.active{
