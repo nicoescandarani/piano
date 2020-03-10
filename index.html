@@ -3,10 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <title>Piano</title>
 </head>
 <body>
+
+    <div class="btns-container">
+        <div class="btn-wrapper">
+            <p class="title">Drum Loop 1</p>
+            <div data-loop="dlOne" class="btn"></div>
+        </div>
+        <div class="btn-wrapper">
+            <p class="title">Drum Loop 2</p>
+            <div data-loop="dlTwo" class="btn"></div>
+        </div>
+        <div class="btn-wrapper">
+            <p class="title">Guitar Loop 1</p>
+            <div data-loop="glOne" class="btn"></div>
+        </div>
+        <div class="btn-wrapper">
+            <p class="title">Guitar Loop 2</p>
+            <div data-loop="glTwo" class="btn"></div>
+        </div>
+    </div>
     
     <div class="piano">
         <div data-note="C" class="key white"></div>
@@ -31,20 +51,28 @@
             <div class="white-line"></div>
         </div>
         <div data-note="B" class="key white"></div>
+        <div data-note="CC" class="key white"></div>
     </div>
 
-    <audio src="assets/C.mp3" id="C"></audio>
-    <audio src="assets/Db.mp3" id="Db"></audio>
-    <audio src="assets/D.mp3" id="D"></audio>
-    <audio src="assets/Eb.mp3" id="Eb"></audio>
-    <audio src="assets/E.mp3" id="E"></audio>
-    <audio src="assets/F.mp3" id="F"></audio>
-    <audio src="assets/Gb.mp3" id="Gb"></audio>
-    <audio src="assets/G.mp3" id="G"></audio>
-    <audio src="assets/Ab.mp3" id="Ab"></audio>
-    <audio src="assets/A.mp3" id="A"></audio>
-    <audio src="assets/Bb.mp3" id="Bb"></audio>
-    <audio src="assets/B.mp3" id="B"></audio>
+    <audio src="assets/DL1.wav" id="dlOne"></audio>
+    <audio src="assets/DL2.wav" id="dlTwo"></audio>
+    <audio src="assets/GL1.wav" id="glOne"></audio>
+    <audio src="assets/GL2.wav" id="glTwo"></audio>
+
+
+    <audio src="assets/C.wav" id="C"></audio>
+    <audio src="assets/Db.wav" id="Db"></audio>
+    <audio src="assets/D.wav" id="D"></audio>
+    <audio src="assets/Eb.wav" id="Eb"></audio>
+    <audio src="assets/E.wav" id="E"></audio>
+    <audio src="assets/F.wav" id="F"></audio>
+    <audio src="assets/Gb.wav" id="Gb"></audio>
+    <audio src="assets/G.wav" id="G"></audio>
+    <audio src="assets/Ab.wav" id="Ab"></audio>
+    <audio src="assets/A.wav" id="A"></audio>
+    <audio src="assets/Bb.wav" id="Bb"></audio>
+    <audio src="assets/B.wav" id="B"></audio>
+    <audio src="assets/CC.wav" id="CC"></audio>
 
     <script src="app.js"></script>
 </body>

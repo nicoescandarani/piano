@@ -6,14 +6,43 @@
 
 body {
     background-color: #2e2e2e;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btns-container {
+    margin: 5% auto 0;
     display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.btn-wrapper {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+}
+
+.title {
+    color: #d4d4d4;
+}
+
+.btn {
+    margin-top: 20px;
+    height: 70px;
+    width: 70px;
+    background: linear-gradient(145deg, #292929, #313131);
+    box-shadow:  10px 10px 20px #232323, 
+                -10px -10px 20px #393939;
+    border-radius: 50%;
 }
 
 .piano {
     display: flex;
+    margin-top: 5%;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 .key {
@@ -25,15 +54,12 @@ body {
 .white {
     --width: 80px;
     background-color: #2b2b2b;
-    /* box-shadow: 4px 4px 6px #181818,
-                -4px -4px 6px #383838;
-    ; */
     border-radius: 10px;
     margin-right: 8px;
     margin-left: 8px;
-background: #2e2e2e;
-box-shadow:  5px 5px 10px #232323, 
-             -5px -5px 10px #393939;
+    background: #2e2e2e;
+    box-shadow:  5px 5px 10px #232323, 
+                -5px -5px 10px #393939;
 }
 
 .black {
@@ -41,9 +67,6 @@ box-shadow:  5px 5px 10px #232323,
     background-color: #0f0f0f;
     margin-right: calc(var(--width) / -2);
     margin-left: calc(var(--width) / -2);
-    /* box-shadow: 6px 6px 4px #0e0e0e,
-                -6px -6px 4px #353535;
-    ; */
     border-radius: 10px;
     margin-top: 10px;
     z-index: 2;
@@ -55,10 +78,13 @@ box-shadow:  5px 5px 10px #232323,
     height: 80%;
     width: 8px;
     background-color: #5f5f5f;
-    /* box-shadow: 2px 2px 4px #3d3d3d,
-                -2px -2px 4px #444444; */
     border-radius: 10px;
     margin-top: 10px;
+}
+
+.btn.active {
+    box-shadow: inset 10px 10px 20px #232323, 
+                inset -10px -10px 20px #393939;
 }
 
 .white.active {
@@ -69,7 +95,6 @@ box-shadow:  5px 5px 10px #232323,
 .black.active{
     box-shadow: inset 2px 2px 4px #0e0e0e,
                 inset -2px -2px 4px #353535;
-    ;
 }
 
 iframe {
