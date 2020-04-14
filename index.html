@@ -9,49 +9,71 @@
 </head>
 <body>
 
-    <div class="btns-container">
-        <div class="btn-wrapper">
-            <p class="title">Drum Loop 1</p>
-            <div data-loop="dlOne" class="btn"></div>
+    <div class="main">
+
+        <div class="btns-container">
+            <div class="btn-wrapper">
+                <p class="title">Drum Loop 1</p>
+                <div data-loop="dlOne" class="btn"></div>
+                <div class="btns-wrap">
+                    <div class="ps-wrapper"><img src="assets/play.svg" alt="Play Loop" class="sp"></div>
+                    <div class="ps-wrapper"><img src="assets/stop.svg" alt="Stop Loop" class="sp"></div>
+                </div>
+            </div>
+            <div class="btn-wrapper">
+                <p class="title">Drum Loop 2</p>
+                <div data-loop="dlTwo" class="btn"></div>
+                <div class="btns-wrap">
+                    <div class="ps-wrapper"><img src="assets/play.svg" alt="Play Loop" class="sp"></div>
+                    <div class="ps-wrapper"><img src="assets/stop.svg" alt="Stop Loop" class="sp"></div>
+                </div>
+            </div>
+            <div class="btn-wrapper">
+                <p class="title">Guitar Loop 1</p>
+                <div data-loop="glOne" class="btn"></div>
+                <div class="btns-wrap">
+                    <div class="ps-wrapper"><img src="assets/play.svg" alt="Play Loop" class="sp"></div>
+                    <div class="ps-wrapper"><img src="assets/stop.svg" alt="Stop Loop" class="sp"></div>
+                </div>
+            </div>
+            <div class="btn-wrapper">
+                <p class="title">Guitar Loop 2</p>
+                <div data-loop="glTwo" class="btn"></div>
+                <div class="btns-wrap">
+                    <div class="ps-wrapper"><img src="assets/play.svg" alt="Play Loop" class="sp"></div>
+                    <div class="ps-wrapper"><img src="assets/stop.svg" alt="Stop Loop" class="sp"></div>
+                </div>
+            </div>
         </div>
-        <div class="btn-wrapper">
-            <p class="title">Drum Loop 2</p>
-            <div data-loop="dlTwo" class="btn"></div>
+
+        <div class="piano-wrapper">
+            <div class="piano">
+                <div data-note="C" class="key white"></div>
+                <div data-note="Db" class="key black">
+                    <div class="white-line"></div>
+                </div>
+                <div data-note="D" class="key white"></div>
+                <div data-note="Eb" class="key black">
+                    <div class="white-line"></div>
+                </div>
+                <div data-note="E" class="key white"></div>
+                <div data-note="F" class="key white"></div>
+                <div data-note="Gb" class="key black">
+                    <div class="white-line"></div>
+                </div>
+                <div data-note="G" class="key white"></div>
+                <div data-note="Ab" class="key black">
+                    <div class="white-line"></div>
+                </div>
+                <div data-note="A" class="key white"></div>
+                <div data-note="Bb" class="key black">
+                    <div class="white-line"></div>
+                </div>
+                <div data-note="B" class="key white"></div>
+                <div data-note="CC" class="key white"></div>
+            </div>
         </div>
-        <div class="btn-wrapper">
-            <p class="title">Guitar Loop 1</p>
-            <div data-loop="glOne" class="btn"></div>
-        </div>
-        <div class="btn-wrapper">
-            <p class="title">Guitar Loop 2</p>
-            <div data-loop="glTwo" class="btn"></div>
-        </div>
-    </div>
-    
-    <div class="piano">
-        <div data-note="C" class="key white"></div>
-        <div data-note="Db" class="key black">
-            <div class="white-line"></div>
-        </div>
-        <div data-note="D" class="key white"></div>
-        <div data-note="Eb" class="key black">
-            <div class="white-line"></div>
-        </div>
-        <div data-note="E" class="key white"></div>
-        <div data-note="F" class="key white"></div>
-        <div data-note="Gb" class="key black">
-            <div class="white-line"></div>
-        </div>
-        <div data-note="G" class="key white"></div>
-        <div data-note="Ab" class="key black">
-            <div class="white-line"></div>
-        </div>
-        <div data-note="A" class="key white"></div>
-        <div data-note="Bb" class="key black">
-            <div class="white-line"></div>
-        </div>
-        <div data-note="B" class="key white"></div>
-        <div data-note="CC" class="key white"></div>
+
     </div>
 
     <audio src="assets/DL1.wav" id="dlOne"></audio>

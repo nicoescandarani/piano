@@ -10,11 +10,15 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 .btns-container {
     margin: 5% auto 0;
     display: flex;
     justify-content: space-around;
-    width: 60%;
 }
 
 .btn-wrapper {
@@ -26,6 +30,7 @@ body {
 
 .title {
     color: #d4d4d4;
+    font-weight: 700;
 }
 
 .btn {
@@ -36,13 +41,41 @@ body {
     box-shadow:  10px 10px 20px #232323, 
                 -10px -10px 20px #393939;
     border-radius: 50%;
+    cursor: pointer;
+}
+
+.btns-wrap {
+    margin: 20% auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.ps-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    box-shadow:  5px 5px 10px #232323, 
+                -5px -5px 10px #393939;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.sp {
+    height: 10px;
+}
+
+.piano-wrapper {
+    display: flex;
+    justify-content: center;
 }
 
 .piano {
     display: flex;
     margin-top: 5%;
-    margin-left: 50%;
-    transform: translateX(-50%);
 }
 
 .key {
@@ -85,6 +118,11 @@ body {
 .btn.active {
     box-shadow: inset 10px 10px 20px #232323, 
                 inset -10px -10px 20px #393939;
+}
+
+.ps-active {
+    box-shadow: inset 5px 5px 10px #232323, 
+                inset -5px -5px 10px #393939;
 }
 
 .white.active {

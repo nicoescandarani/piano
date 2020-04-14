@@ -5,6 +5,8 @@ const btns = document.querySelectorAll('.btn');
 const keys = document.querySelectorAll('.key');
 const whiteKeys = document.querySelectorAll('.key.white');
 const blackKeys = document.querySelectorAll('.key.black');
+const ps = document.querySelectorAll('.ps-wrapper');
+
 
 // ! Functions
 
@@ -18,7 +20,6 @@ function playNote (key) {
       });
 
       console.log(key);
-      
 };
 
 function stopNote (key) {
@@ -38,8 +39,14 @@ function playBtnOne (btn) {
       });
 
       console.log(btn);
-      
 };
+
+function stopBtnOne (btn) {
+    const loops = document.getElementById(btn.dataset.loop)
+    noteAudio.currentTime = 0;
+    loops.pause();
+    key.classList.remove('active');
+}
 
 // playNote();
 
@@ -47,12 +54,20 @@ function playBtnOne (btn) {
 // ! Events
 
 keys.forEach (key => {
-  key.addEventListener('click', () => playNote(key))
+    key.addEventListener('click', () => playNote(key))
 });
 
 btns.forEach (btn => {
-  btn.addEventListener('click', () => playBtnOne(btn))
+    btn.addEventListener('click', () => playBtnOne(btn))
 });
+
+
+// ! Check!
+for (i = 0; i < ps.length; i++) {
+    ps[0].addEventListener('click', () => {
+        this.ps[0].classList.toggle('ps-active');
+    })
+}
 
 document.addEventListener('keydown', e => {
     if (e.repeat) return;
