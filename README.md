@@ -1,2 +1,2 @@
-# piano
+# Piano
 https://nescanda.com/piano/
